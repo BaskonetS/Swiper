@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 100%;
+  background: rgb(93, 93, 93);
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+  /* color: inherit; */
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+}
+
+.title__swiper {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(116, 244, 248);
+  margin: 100px 0 50px 0;
+  text-align: center;
+}
+
+.image__slider {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0 70px 0;
+  
+}
+
+/* .image__slider_wrapper {} */
+
+/* Служит для постановки загрузочного колеса Lazyload по центру */
+.swiper-container-autoheight .swiper-wrapper {
+  align-items: center;  
+}
+
+/* .image__slider_slide {} */
+
+.image__slider_image {
+  text-align: center;
+  position: relative;  
+}
+.image__slider_image img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;  
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 255, 255, .7);
+  border-radius: 50%;  
+}
+.image__slider .swiper-button-prev::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;    
+  background: url('back.svg') center no-repeat;
+}
+.image__slider .swiper-button-next::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  margin-left: 2px;  
+  background: url('next.svg') center no-repeat;
+}
+
+.image__slider .swiper-pagination {
+  bottom: 20px;
+}
+
+.image__slider .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background-color: cyan;
+}
+
+.image__slider .swiper-pagination-fraction {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.image__slider .swiper-pagination-progressbar-fill {
+  background-color: cyan;
+}
+
+.image__slider .swiper-scrollbar {
+  background-color: rgba(0, 255, 255, .2);
+}
+
+.image__slider .swiper-scrollbar-drag {
+  cursor: pointer;
+  background-color: cyan;
+}
+
+/* Автоширина */
+/* .image__slider .swiper-slide {
+  width: auto;
+} */
+
+/* Мультирядность */
+/* .image__slider {
+  height: 700px;
+}
+.image__slider .swiper-slide {
+  height: calc((100% - 30px) / 2);
+  overflow: hidden;
+} */
+
+/* Вертикальный слайдер */
+/* .image__slider {
+  height: 500px;
+  padding: 0;
+} */
+
+/* Эффект куб */
+/* .image__slider {
+  width: 500px;
+} */
+
